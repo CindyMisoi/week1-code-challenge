@@ -80,7 +80,7 @@ const salary = (gross) => {
     console.log(gross - (gross*taxRate(gross)) - nssfDeduction - nhifDeduction(gross))
 }
 
-// get user input
+// get the user input
 readline.question('Please enter your gross salary: ', gross => {
     salary(gross)
     readline.close()
